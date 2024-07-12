@@ -15,8 +15,8 @@ require_once('../exoreprise/controller.php');
    <?php foreach($order['products'] as $product){?>
               <p>Produits : <?php echo $product;} ?></p>
    
-   <?php $CreatedDatetime = new DateTime($order['createdAt']);?>
-   <p>Date de création : <?php echo $CreatedDatetime->format('d/M');?></p>
+   <?php $Date= new DateTime($order['date']);?>
+   <p>Date de création : <?php echo $Date->format('d/M');?></p>
 
    </article>
 <?php } ?>
