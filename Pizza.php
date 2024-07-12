@@ -54,7 +54,7 @@ class Pizza{
             $this->statut = 'livré';
         }
     }
-
+// méthode pour sortir un élément d'un private
     public function getIngredient(){
         return  $this->ingredient1.','.$this->ingredient2.','.$this->ingredient3;
     }
@@ -74,7 +74,7 @@ class Pizza{
 }
 
 
-$pizzaDamien = new pizza("large", "crème","poulet","curry","tomate");
+$pizzaDamien = new pizza("large","crème","poulet","curry","tomate");
 
 ?>
 
